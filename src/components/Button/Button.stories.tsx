@@ -30,3 +30,25 @@ export const Secondary: Story = {
     color: 'gray',
   },
 };
+export const WithLongText: Story = {
+  args: {
+    children: 'This is a very long button text to see how it looks',
+    color: 'blue',
+  },
+};
+
+export const WithClickAction: Story = {
+  args: {
+    children: 'Click me',
+    color: 'blue',
+    onClick: () => alert('Button clicked!'),
+  },
+};
+
+export const Disabled: Story = {
+  args: {
+    children: 'Disabled Button',
+    color: 'blue',
+    disabled: true,
+  },
+};
